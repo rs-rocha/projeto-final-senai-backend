@@ -1,9 +1,6 @@
 package com.example.backend.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class PaisEntity {
@@ -14,6 +11,7 @@ public class PaisEntity {
     private String lingua;
     private String areaTotal;
     private String localizacao;
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String historico;
 
     public Long getId() {
