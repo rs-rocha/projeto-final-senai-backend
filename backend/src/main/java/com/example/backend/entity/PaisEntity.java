@@ -8,11 +8,20 @@ public class PaisEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String pais;
+    private String capital;
     private String lingua;
     private String areaTotal;
     private String localizacao;
     @Column(columnDefinition = "MEDIUMTEXT")
     private String historico;
+
+    public String getCapital() {
+        return capital;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
 
     public Long getId() {
         return id;
